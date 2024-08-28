@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpCalc</title>
+    <link rel="stylesheet" href="calci.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1 class="log">Simp_Calc</h1>
+        <h1 class="tag">$</h1>
+        <h2 class="price">13.00</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing <br>  elite. Quisquam quibusdam fugit aliquam dolores, <br> officiis iure dolorem necessitatibus, <br> ex inventore unde !.</p>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="cmain">
+            <form name="f">
+                <input type="text" name="ddd" placeholder="0" id="eee"> <br>
+                <input type="button" value="1" onclick="f.ddd.value+=1">
+                <input type="button" value="2" onclick="f.ddd.value+=2">
+                <input type="button" value="3" onclick="f.ddd.value+=3">
+                <input type="button" value="+" onclick="add()" class="jodh">
+                <br>
+                <input type="button" value="4" onclick="f.ddd.value+=4">
+                <input type="button" value="5" onclick="f.ddd.value+=5">
+                <input type="button" value="6" onclick="f.ddd.value+=6">
+                <input type="button" value="-" onclick="sub()" class="ghatana">
+                <br>
+                <input type="button" value="7" onclick="f.ddd.value+=7">
+                <input type="button" value="8" onclick="f.ddd.value+=8">
+                <input type="button" value="9" onclick="f.ddd.value+=9">
+                <input type="button" value="/" onclick="divi()" class="bhaag">
+                <br>
+                <input type="button" value="Ac" onclick="f.ddd.value=''" class="sabkhatam">
+                <input type="button" value="0" onclick="f.ddd.value+=0">
+                <input type="button" value="=" onclick="f.ddd.value=eval (f.ddd.value)" class="barabar">
+                <input type="button" value="x" onclick="multi()" class="guda">
+                <br>
+           </form> 
+        </div>
+    </div>
+</body>
+<script src="calci.js"></script>
+</html>
